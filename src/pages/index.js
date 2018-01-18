@@ -8,7 +8,7 @@ export default class IndexPage extends React.Component {
     super(props)
     this.handleScriptLoad = this.handleScriptLoad.bind(this)
   }
-  static handleScriptLoad() {
+  handleScriptLoad() {
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on('init', (user) => {
         if (!user) {
